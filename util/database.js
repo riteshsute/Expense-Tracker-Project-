@@ -9,4 +9,6 @@ const pool = mysql.createPool({
 
 module.exports = pool.promise();
 
-// database
+// git remote add origin https://github.com/riteshsute/demo.git
+// git branch -M main
+// git push -u origin main
