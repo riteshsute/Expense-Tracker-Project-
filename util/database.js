@@ -1,14 +1,8 @@
-const mysql = require('mysql2');
+const Sequelize = require('sequelize');
 
-const pool = mysql.createPool({
-    host: 'localhost',
-    user: 'root',
-    database: 'node-complete',
-    password: '@Ritesh123'
+const sequelize = new Sequelize('node-complete', 'root', '@Ritesh123', {
+    dialect: 'mysql',
+    host: 'localhost'
 });
 
-module.exports = pool.promise();
-
-// git remote add origin https://github.com/riteshsute/demo.git
-// git branch -M main
-// git push -u origin main
+module.exports = sequelize;
