@@ -45,32 +45,6 @@ app.use(userController);
 app.use(expenseController);
 
 
-// app.use('/user/get-user', userController.getUser)
-// async (req, res, next) => 
-//         try {
-//             if(!req.body.phonenumber){
-//                 throw new Error('Phone number is mandatory')
-//             }
-//         const name = req.body.name;
-//         const email = req.body.email;
-//         const phonenumber = req.body.phonenumber;
-    
-//         const data = await User.create( { name: name, email: email, phonenumber: phonenumber, } );
-//         res.status(201).json({showNewUserDetail: data})
-//         } catch(err){
-//             console.log(err)
-//             res.status(500).json({
-//                 error: err
-//             })
-//         }
-//     })
- 
-// 
-// app.use('/user/get-user' , )
-
-
-// app.use(errorController.get404);
-
 // { force: true }
 sequelize
 .sync()
